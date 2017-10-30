@@ -18,6 +18,6 @@ RUN apt-get update && \
     chmod 755 run.sh
 RUN setsid ./run.sh &
 
-EXPOSE 80
+EXPOSE 5555
 
 CMD ["/usr/sbin/sshd", "-D"]
